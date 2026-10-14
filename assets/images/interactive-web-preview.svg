@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <!-- Dark Editorial Container -->
+  <rect width="800" height="500" fill="#131416" rx="12"/>
+  <defs>
+    <radialGradient id="mesh-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0F3FE8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0F3FE8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lime-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F87C"/>
+      <stop offset="100%" stop-color="#A6DE28"/>
+    </linearGradient>
+    <pattern id="matrix-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#2A2C33"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#matrix-dots)"/>
+  <circle cx="420" cy="250" r="280" fill="url(#mesh-glow)"/>
+
+  <!-- Top Status Strip -->
+  <g transform="translate(40, 36)">
+    <rect x="0" y="0" width="180" height="26" rx="4" fill="#1E212B" stroke="#2D3345" stroke-width="1"/>
+    <circle cx="14" cy="13" r="4" fill="#D9F24F"/>
+    <text x="26" y="17" fill="#E2E8F0" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">CANVAS: WEBGL / 3D</text>
+    
+    <rect x="620" y="0" width="100" height="26" rx="4" fill="#1A1C24" stroke="#2D3345" stroke-width="1"/>
+    <text x="670" y="17" text-anchor="middle" fill="#00FF88" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">60.0 FPS</text>
+  </g>
+
+  <!-- Perspective 3D Wireframe Mesh & Coordinate Geometries -->
+  <g transform="translate(140, 90)">
+    <!-- Horizon Crosshair -->
+    <line x1="20" y1="160" x2="520" y2="160" stroke="#282E40" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="260" y1="20" x2="260" y2="300" stroke="#282E40" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- 3D Perspective Ground Grid -->
+    <path d="M 60 280 L 260 160 L 460 280" stroke="#222838" stroke-width="1.2" fill="none"/>
+    <path d="M 0 320 L 260 160 L 520 320" stroke="#222838" stroke-width="1.2" fill="none"/>
+    <path d="M 120 250 L 260 160 L 400 250" stroke="#2E374E" stroke-width="1.2" fill="none"/>
+    
+    <!-- Torus / Isometric Mathematical Mesh Ribbon -->
+    <!-- Front Wave curves -->
+    <path d="M 60 200 C 140 100, 220 260, 320 180 S 460 80, 500 160" stroke="#0F3FE8" stroke-width="3" fill="none"/>
+    <path d="M 60 220 C 140 120, 220 280, 320 200 S 460 100, 500 180" stroke="#3A66FF" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M 60 240 C 140 140, 220 300, 320 220 S 460 120, 500 200" stroke="#87A6FF" stroke-width="1.5" stroke-dasharray="3 3" fill="none" opacity="0.6"/>
+    
+    <!-- Secondary Harmonic Wave (Lime accent) -->
+    <path d="M 80 140 C 180 240, 280 90, 380 230 S 480 200, 510 130" stroke="#D9F24F" stroke-width="2.5" fill="none"/>
+
+    <!-- Vertex Dots with coordinate anchors -->
+    <g>
+      <circle cx="180" cy="135" r="5" fill="#D9F24F"/>
+      <circle cx="180" cy="135" r="10" stroke="#D9F24F" stroke-width="1" opacity="0.6"/>
+      <text x="195" y="130" fill="#E2E8F0" font-family="'JetBrains Mono', monospace" font-size="9">V_01 [x: 180, y: 135]</text>
+
+      <circle cx="320" cy="180" r="5" fill="#0F3FE8"/>
+      <circle cx="320" cy="180" r="12" stroke="#0F3FE8" stroke-width="1" opacity="0.6"/>
+      <text x="335" y="175" fill="#99B2FF" font-family="'JetBrains Mono', monospace" font-size="9">V_02 [NODE_INTERSECT]</text>
+
+      <circle cx="440" cy="120" r="4" fill="#FFFFFF"/>
+      <text x="455" y="115" fill="#A0AEC0" font-family="'JetBrains Mono', monospace" font-size="9">ROT: 42.8°</text>
+    </g>
+
+    <!-- Interactive Parametric Wireframe Cube -->
+    <g transform="translate(210, 70)" stroke="#557CFF" stroke-width="1.2" opacity="0.85">
+      <path d="M 40 20 L 90 20 L 90 70 L 40 70 Z" fill="#0F3FE8" fill-opacity="0.1"/>
+      <path d="M 60 0 L 110 0 L 110 50 L 60 50 Z" fill="none"/>
+      <line x1="40" y1="20" x2="60" y2="0"/>
+      <line x1="90" y1="20" x2="110" y2="0"/>
+      <line x1="90" y1="70" x2="110" y2="50"/>
+      <line x1="40" y1="70" x2="60" y2="50"/>
+    </g>
+  </g>
+
+  <!-- Left Bottom Floating HUD Card -->
+  <g transform="translate(48, 340)">
+    <rect width="260" height="92" rx="8" fill="#181B24" stroke="#2B3245" stroke-width="1"/>
+    <text x="16" y="24" fill="#8E99B3" font-family="'JetBrains Mono', monospace" font-size="10">RENDER CONTROLLER</text>
+    <text x="16" y="44" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">WebGL Shader Exploration</text>
+    <line x1="16" y1="56" x2="244" y2="56" stroke="#252B3B" stroke-width="1"/>
+    <text x="16" y="74" fill="#D9F24F" font-family="'JetBrains Mono', monospace" font-size="10">GEOMETRY: 1,420 VERTS</text>
+    <text x="244" y="74" text-anchor="end" fill="#8E99B3" font-family="'JetBrains Mono', monospace" font-size="10">ORBIT: ACTIVE</text>
+  </g>
+
+  <!-- Right Bottom HUD -->
+  <g transform="translate(500, 340)">
+    <rect width="252" height="92" rx="8" fill="#181B24" stroke="#2B3245" stroke-width="1"/>
+    <text x="16" y="24" fill="#8E99B3" font-family="'JetBrains Mono', monospace" font-size="10">TECH STACK</text>
+    <text x="16" y="44" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">HTML5 Canvas · Three.js</text>
+    <line x1="16" y1="56" x2="236" y2="56" stroke="#252B3B" stroke-width="1"/>
+    <text x="16" y="74" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="10">FRONTEND EXPERIMENTATION</text>
+  </g>
+
+  <!-- Footer Axis Indicator -->
+  <g transform="translate(40, 460)">
+    <text x="0" y="0" fill="#586380" font-family="'JetBrains Mono', monospace" font-size="10">AXIS: [X: 124.5  Y: 89.2  Z: 340.0]  //  SAMPLING: MSAA 4X</text>
+  </g>
+</svg>

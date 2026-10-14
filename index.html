@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Safrin Aaliya — B.Sc. Computer Science student (AI & DS) exploring full-stack web development, Flutter applications, AI technologies, and thoughtful user experiences.">
+  <meta name="author" content="Safrin Aaliya">
+  <title>Safrin Aaliya — Software Developer &amp; Student | Portfolio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       SITE HEADER & NAVIGATION
+       Three-zone grid: brand (left) · nav (true center) · CTA (right)
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+
+      <a href="#home" class="brand-monogram" aria-label="Safrin Aaliya — Home">
+        SA<span class="brand-dot">.</span>
+      </a>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="#contact" class="btn btn-primary mobile-drawer-cta">
+            Let's Talk <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-secondary btn-sm header-cta-btn">Let's Talk</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation menu">
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ====================================================================
+         HERO (#home)
+         ==================================================================== -->
+    <section class="hero-section" id="home" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <span>SOFTWARE DEVELOPER</span>
+              <span class="hero-eyebrow-bullet" aria-hidden="true">·</span>
+              <span>STUDENT</span>
+              <span class="hero-eyebrow-bullet" aria-hidden="true">·</span>
+              <span>BUILDER</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-heading">
+              I build <span class="hero-title-accent">digital experiences</span> that solve real problems.
+            </h1>
+
+            <p class="hero-desc">
+              I’m Safrin Aaliya, a computer science student exploring full-stack development, Flutter applications, AI technologies, and thoughtful user experiences.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">Explore my work</a>
+              <a href="#about" class="btn-arrow">
+                More about me <span class="arrow-icon" aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="hero-scroll-indicator" aria-hidden="true">
+              <span class="scroll-line"></span>
+              <span>SCROLL TO DISCOVER</span>
+            </div>
+          </div>
+
+          <div class="hero-visual-card" aria-label="Profile summary card">
+            <div class="visual-topbar">
+              <div class="visual-dots" aria-hidden="true">
+                <span class="dot-indicator"></span>
+                <span class="dot-indicator"></span>
+                <span class="dot-indicator"></span>
+              </div>
+              <div class="visual-meta">CBE // IN · EST. 2026</div>
+            </div>
+
+            <div class="visual-body">
+              <div class="visual-headline-block">
+                <span class="code-pill">CORE MANIFESTO</span>
+                <div class="visual-statement">
+                  Designing with intentional purpose &amp; engineering with precision.
+                </div>
+              </div>
+
+              <div class="visual-feature-matrix">
+                <div class="matrix-item">
+                  <span class="matrix-label">SPECIALIZATION</span>
+                  <span class="matrix-val">AI &amp; Data Science</span>
+                </div>
+                <div class="matrix-item">
+                  <span class="matrix-label">FRAMEWORK</span>
+                  <span class="matrix-val">Flutter &amp; Web</span>
+                </div>
+                <div class="matrix-item">
+                  <span class="matrix-label">APPROACH</span>
+                  <span class="matrix-val">Practical Builds</span>
+                </div>
+                <div class="matrix-item">
+                  <span class="matrix-label">LOCATION</span>
+                  <span class="matrix-val">Coimbatore, TN</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="visual-footer-bar">
+              <span>STATUS: UNDERGRADUATE</span>
+              <span class="badge-cobalt">LEARNING BY DOING</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialization Strip -->
+    <div class="specialization-strip" role="region" aria-label="Focus Areas">
+      <div class="container">
+        <div class="specialization-items">
+          <span>WEB DEVELOPMENT</span>
+          <span class="specialization-divider" aria-hidden="true">/</span>
+          <span>MOBILE APPLICATIONS</span>
+          <span class="specialization-divider" aria-hidden="true">/</span>
+          <span>AI EXPLORATION</span>
+          <span class="specialization-divider" aria-hidden="true">/</span>
+          <span>UI/UX DESIGN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         ABOUT (#about)
+         Row 1: portrait | story      Row 2: four-up fact strip
+         ==================================================================== -->
+    <section class="section-wrapper about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <header class="section-head">
+          <span class="section-marker">01 / ABOUT</span>
+          <h2 class="section-title" id="about-heading">Curiosity turns into things I can build.</h2>
+        </header>
+
+        <div class="about-layout">
+
+          <figure class="about-profile-card">
+            <div class="about-photo-frame">
+              <img
+                src="assets/images/profile-photo.jpg"
+                alt="Portrait of Safrin Aaliya"
+                class="about-profile-photo"
+                width="600"
+                height="750"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption class="about-photo-caption">
+              <span class="caption-name">SAFRIN AALIYA</span>
+              <span class="caption-meta">KG CAS // 2026</span>
+            </figcaption>
+          </figure>
+
+          <div class="about-text-col">
+            <p class="about-lead-para">
+              I’m Safrin Aaliya, a B.Sc. Computer Science student specializing in Artificial Intelligence and Data Science. I enjoy exploring how technology can solve everyday problems and how thoughtful design can make digital products easier to use.
+            </p>
+            <p>
+              My interests span full-stack web development, Flutter mobile applications, AI technologies, and interactive web experiences. I’m continuing to strengthen my skills through practical projects, experimentation, and collaboration.
+            </p>
+            <p>
+              I value curiosity, consistency, and learning by building. My goal is to create useful digital products while growing into a capable software developer.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Fact strip -->
+        <dl class="facts-grid" aria-label="Student facts summary">
+          <div class="facts-item">
+            <dt class="fact-term">Education</dt>
+            <dd class="fact-desc">B.Sc. Computer Science (AI &amp; DS)</dd>
+          </div>
+          <div class="facts-item">
+            <dt class="fact-term">Institution</dt>
+            <dd class="fact-desc">KG College of Arts &amp; Science, Coimbatore</dd>
+          </div>
+          <div class="facts-item">
+            <dt class="fact-term">Current Stage</dt>
+            <dd class="fact-desc">Undergraduate student</dd>
+          </div>
+          <div class="facts-item">
+            <dt class="fact-term">Interests</dt>
+            <dd class="fact-desc">Full-stack, Flutter, AI, UI/UX, interactive web</dd>
+          </div>
+        </dl>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SKILLS (#skills)
+         ==================================================================== -->
+    <section class="section-wrapper skills-section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <header class="section-head">
+          <span class="section-marker">02 / SKILLS</span>
+          <h2 class="section-title" id="skills-heading">Tools I use. Skills I’m developing.</h2>
+        </header>
+
+        <div class="skills-cards-grid">
+
+          <article class="skill-cluster-card">
+            <div class="skill-card-top">
+              <h3 class="skill-category-title">Frontend</h3>
+              <span class="skill-num">01</span>
+            </div>
+            <ul class="skill-tags-list">
+              <li class="skill-pill">HTML5</li>
+              <li class="skill-pill">CSS3</li>
+              <li class="skill-pill">JavaScript (ES6+)</li>
+              <li class="skill-pill">React</li>
+            </ul>
+          </article>
+
+          <article class="skill-cluster-card">
+            <div class="skill-card-top">
+              <h3 class="skill-category-title">Web Development</h3>
+              <span class="skill-num">02</span>
+            </div>
+            <ul class="skill-tags-list">
+              <li class="skill-pill">Next.js</li>
+              <li class="skill-pill">Node.js</li>
+              <li class="skill-pill">REST APIs</li>
+            </ul>
+          </article>
+
+          <article class="skill-cluster-card">
+            <div class="skill-card-top">
+              <h3 class="skill-category-title">Mobile Development</h3>
+              <span class="skill-num">03</span>
+            </div>
+            <ul class="skill-tags-list">
+              <li class="skill-pill">Flutter</li>
+              <li class="skill-pill">Dart</li>
+            </ul>
+          </article>
+
+          <article class="skill-cluster-card">
+            <div class="skill-card-top">
+              <h3 class="skill-category-title">AI Exploration</h3>
+              <span class="skill-num">04</span>
+            </div>
+            <ul class="skill-tags-list">
+              <li class="skill-pill">AI Models</li>
+              <li class="skill-pill">AI-enabled App Development</li>
+            </ul>
+          </article>
+
+          <article class="skill-cluster-card">
+            <div class="skill-card-top">
+              <h3 class="skill-category-title">Design &amp; Interaction</h3>
+              <span class="skill-num">05</span>
+            </div>
+            <ul class="skill-tags-list">
+              <li class="skill-pill">UI/UX Fundamentals</li>
+              <li class="skill-pill">Responsive Design</li>
+              <li class="skill-pill">Three.js Exploration</li>
+            </ul>
+          </article>
+
+          <article class="skill-cluster-card">
+            <div class="skill-card-top">
+              <h3 class="skill-category-title">Tools</h3>
+              <span class="skill-num">06</span>
+            </div>
+            <ul class="skill-tags-list">
+              <li class="skill-pill">Git</li>
+              <li class="skill-pill">GitHub</li>
+              <li class="skill-pill">VS Code</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <!-- Semantic HTML Skills Table -->
+        <div class="skills-table-section">
+          <div class="skills-table-header-desc">
+            <h3 class="table-heading">Technical Skills &amp; Application Breakdown</h3>
+            <span class="table-scroll-hint">Swipe to see more →</span>
+          </div>
+
+          <div class="table-responsive-wrapper">
+            <table class="skills-table">
+              <caption class="sr-only">Overview of development skills, technologies, and practical applications</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Category</th>
+                  <th scope="col">Technologies</th>
+                  <th scope="col">Application</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Frontend</th>
+                  <td><div class="tech-cell-list">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                  </div></td>
+                  <td class="app-cell-desc">Responsive web interfaces, semantic structuring, and DOM interactions</td>
+                </tr>
+                <tr>
+                  <th scope="row">Web Development</th>
+                  <td><div class="tech-cell-list">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Node.js</span>
+                  </div></td>
+                  <td class="app-cell-desc">Component-driven web applications and client-server integrations</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mobile</th>
+                  <td><div class="tech-cell-list">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Dart</span>
+                  </div></td>
+                  <td class="app-cell-desc">Cross-platform mobile interfaces, state management, and prototyping</td>
+                </tr>
+                <tr>
+                  <th scope="row">Design</th>
+                  <td><div class="tech-cell-list">
+                    <span class="tech-tag">UI/UX</span>
+                    <span class="tech-tag">Responsive Design</span>
+                  </div></td>
+                  <td class="app-cell-desc">Usable digital experiences, accessible layouts, and typographic systems</td>
+                </tr>
+                <tr>
+                  <th scope="row">AI &amp; Tools</th>
+                  <td><div class="tech-cell-list">
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">GitHub</span>
+                    <span class="tech-tag">AI Models</span>
+                    <span class="tech-tag">VS Code</span>
+                  </div></td>
+                  <td class="app-cell-desc">Version control workflows, developer tooling, and smart assistant integration</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PROJECTS (#projects)
+         ==================================================================== -->
+    <section class="section-wrapper projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <header class="section-head">
+          <span class="section-marker">03 / SELECTED WORK</span>
+          <h2 class="section-title" id="projects-heading">Ideas, translated into interfaces.</h2>
+        </header>
+
+        <div class="projects-container">
+
+          <article class="project-showcase project-featured" aria-labelledby="proj-01-title">
+            <div class="project-visual-frame">
+              <img src="assets/images/replateo-preview.svg" alt="Replateo surplus-food platform architecture and network routing vector illustration" loading="lazy" width="800" height="500">
+            </div>
+
+            <div class="project-details-pane">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-number">01</span>
+                  <span class="project-tag-pill">FOOD DONATION / SOCIAL IMPACT</span>
+                </div>
+
+                <h3 class="project-title" id="proj-01-title">REPLATEO</h3>
+
+                <p class="project-desc">
+                  A surplus-food platform concept connecting food donors with NGOs to help coordinate the redistribution of usable surplus food.
+                </p>
+
+                <ul class="project-specs-list">
+                  <li class="project-spec-item">
+                    <span class="spec-key">STACK</span>
+                    <span class="spec-val">React · Tailwind CSS</span>
+                  </li>
+                  <li class="project-spec-item">
+                    <span class="spec-key">ROLE</span>
+                    <span class="spec-val">Frontend assistance</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <span class="project-status-badge status-concept">
+                  <span class="project-status-dot"></span>
+                  Project Concept
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <div class="projects-secondary-grid">
+
+            <article class="project-showcase project-card-vertical" aria-labelledby="proj-02-title">
+              <div class="project-visual-frame">
+                <img src="assets/images/fourth-idly-preview.svg" alt="Fourth Idly mobile donation application interface vector illustration" loading="lazy" width="800" height="500">
+              </div>
+
+              <div class="project-details-pane">
+                <div>
+                  <div class="project-meta-row">
+                    <span class="project-number">02</span>
+                    <span class="project-tag-pill">MOBILE APP / COMMUNITY</span>
+                  </div>
+
+                  <h3 class="project-title" id="proj-02-title">FOURTH IDLY</h3>
+
+                  <p class="project-desc">
+                    A donation-focused mobile application concept designed to support community-oriented giving through a mobile interface.
+                  </p>
+
+                  <ul class="project-specs-list">
+                    <li class="project-spec-item">
+                      <span class="spec-key">STACK</span>
+                      <span class="spec-val">Flutter · Dart · Riverpod · Firebase</span>
+                    </li>
+                    <li class="project-spec-item">
+                      <span class="spec-key">FOCUS</span>
+                      <span class="spec-val">Mobile App Prototyping</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <span class="project-status-badge status-prototype">
+                    <span class="project-status-dot"></span>
+                    Prototype
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-showcase project-card-vertical" aria-labelledby="proj-03-title">
+              <div class="project-visual-frame">
+                <img src="assets/images/interactive-web-preview.svg" alt="Interactive Web Experiences 3D WebGL wireframe vector visualization" loading="lazy" width="800" height="500">
+              </div>
+
+              <div class="project-details-pane">
+                <div>
+                  <div class="project-meta-row">
+                    <span class="project-number">03</span>
+                    <span class="project-tag-pill">WEB / CREATIVE TECH</span>
+                  </div>
+
+                  <h3 class="project-title" id="proj-03-title">INTERACTIVE WEB</h3>
+
+                  <p class="project-desc">
+                    Exploring engaging web interfaces, responsive layouts, and interactive visual experiences through frontend development.
+                  </p>
+
+                  <ul class="project-specs-list">
+                    <li class="project-spec-item">
+                      <span class="spec-key">STACK</span>
+                      <span class="spec-val">HTML · CSS · JavaScript · Three.js</span>
+                    </li>
+                    <li class="project-spec-item">
+                      <span class="spec-key">TYPE</span>
+                      <span class="spec-val">Exploration &amp; Learning</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <span class="project-status-badge status-development">
+                    <span class="project-status-dot"></span>
+                    In development
+                  </span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONTACT (#contact)
+         Two equal-height columns: details | form
+         ==================================================================== -->
+    <section class="section-wrapper contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <header class="section-head">
+          <span class="section-marker">04 / CONTACT</span>
+          <h2 class="section-title" id="contact-heading">Have an idea worth building?</h2>
+        </header>
+
+        <div class="contact-grid">
+
+          <div class="contact-info-col">
+            <p class="contact-intro">
+              I’m interested in meaningful projects, collaborative learning, and opportunities to grow as a developer.
+            </p>
+
+            <div class="contact-direct-card">
+              <span class="direct-label">DIRECT EMAIL INQUIRY</span>
+              <a href="mailto:safrinaaliya910@gmail.com" class="direct-email-link" title="Click to open your email client">
+                <span class="direct-email-text">safrinaaliya910@gmail.com</span>
+                <span class="direct-email-arrow" aria-hidden="true">↗</span>
+              </a>
+              <p class="direct-note">
+                Open for internship opportunities, technical discussions, and collaborative projects.
+              </p>
+            </div>
+
+            <dl class="contact-details">
+              <div class="contact-detail-row">
+                <dt>Location</dt>
+                <dd>Coimbatore, Tamil Nadu, India</dd>
+              </div>
+              <div class="contact-detail-row">
+                <dt>Studying</dt>
+                <dd>KG College of Arts &amp; Science (AI &amp; DS)</dd>
+              </div>
+              <div class="contact-detail-row">
+                <dt>Response</dt>
+                <dd>Usually within 24–48 hours</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="contact-form-container">
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-subtitle">Fill in the fields below for a front-end demonstration or use the direct mail link.</p>
+
+            <form class="contact-form" id="contact-form" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="alex@example.com" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Internship opportunity / Collaboration inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required-mark" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Briefly describe what you would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Submit</button>
+
+              <div id="form-feedback" class="form-feedback-box" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SITE FOOTER
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-pane">
+          <span class="footer-monogram">SA.</span>
+          <p class="footer-desc">
+            Personal developer portfolio of Safrin Aaliya — B.Sc. Computer Science (AI &amp; DS) student at KG College of Arts &amp; Science, Coimbatore.
+          </p>
+        </div>
+
+        <nav class="footer-nav-col" aria-label="Footer Quick Navigation">
+          <span class="footer-col-title">Navigation</span>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Safrin Aaliya. All rights reserved.</div>
+        <a href="#home" class="back-to-top" aria-label="Scroll back to top">
+          Back to top <span aria-hidden="true">↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <!-- Dark Editorial Container -->
+  <rect width="800" height="500" fill="#151413" rx="12"/>
+  <defs>
+    <pattern id="idly-dot-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#2C2B27"/>
+    </pattern>
+    <linearGradient id="phone-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#21201D"/>
+      <stop offset="100%" stop-color="#181715"/>
+    </linearGradient>
+    <linearGradient id="warm-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E27D60"/>
+      <stop offset="100%" stop-color="#E8A87C"/>
+    </linearGradient>
+    <linearGradient id="cobalt-subtle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3FE8"/>
+      <stop offset="100%" stop-color="#3A66FF"/>
+    </linearGradient>
+    <filter id="phone-shadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="8" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#idly-dot-grid)"/>
+
+  <!-- Warm ambient light behind the phone -->
+  <circle cx="480" cy="260" r="240" fill="#E27D60" opacity="0.14" filter="blur(70px)"/>
+  <circle cx="280" cy="180" r="180" fill="#0F3FE8" opacity="0.15" filter="blur(60px)"/>
+
+  <!-- Left Information & Architecture Sidebar -->
+  <g transform="translate(48, 48)">
+    <rect x="0" y="0" width="140" height="24" rx="4" fill="#242320" stroke="#363530" stroke-width="1"/>
+    <text x="12" y="16" fill="#D9F24F" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">FLUTTER / RIVERPOD</text>
+
+    <text x="0" y="80" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" letter-spacing="-0.5">Fourth Idly</text>
+    <text x="0" y="104" fill="#E8A87C" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">COMMUNITY MICRO-GIVING APP</text>
+
+    <!-- Project Blueprint Callouts -->
+    <g transform="translate(0, 140)">
+      <rect width="220" height="66" rx="6" fill="#1C1B19" stroke="#2D2C28" stroke-width="1"/>
+      <text x="16" y="24" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="10">STATE ARCHITECTURE</text>
+      <text x="16" y="44" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600">Riverpod Providers &amp; Hooks</text>
+      <text x="16" y="58" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="10">Real-time DB synced</text>
+    </g>
+
+    <g transform="translate(0, 220)">
+      <rect width="220" height="66" rx="6" fill="#1C1B19" stroke="#2D2C28" stroke-width="1"/>
+      <text x="16" y="24" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="10">GIVING WORKFLOW</text>
+      <text x="16" y="44" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600">1-Tap Meal Contribution</text>
+      <text x="16" y="58" fill="#E8A87C" font-family="'JetBrains Mono', monospace" font-size="10">₹25 micro-donation tiers</text>
+    </g>
+
+    <g transform="translate(0, 300)">
+      <rect width="220" height="66" rx="6" fill="#1C1B19" stroke="#2D2C28" stroke-width="1"/>
+      <text x="16" y="24" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="10">STATUS</text>
+      <text x="16" y="44" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600">Mobile Prototype v0.4</text>
+      <text x="16" y="58" fill="#4871FF" font-family="'JetBrains Mono', monospace" font-size="10">Android / iOS build target</text>
+    </g>
+  </g>
+
+  <!-- Mobile Device Mockup (Tilted Right Angle Perspective) -->
+  <g transform="translate(380, 40)" filter="url(#phone-shadow)">
+    <!-- Device Frame -->
+    <rect width="280" height="420" rx="36" fill="url(#phone-grad)" stroke="#4A4843" stroke-width="3"/>
+    
+    <!-- Dynamic Island / Speaker Pill -->
+    <rect x="100" y="14" width="80" height="14" rx="7" fill="#0D0D0C"/>
+
+    <!-- Screen Area -->
+    <g transform="translate(14, 38)">
+      <!-- App Header -->
+      <text x="16" y="22" fill="#8E8C85" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Good morning, Coimbatore</text>
+      <text x="16" y="40" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800">Fourth Idly Drive</text>
+      
+      <circle cx="230" cy="28" r="14" fill="#2E2C28"/>
+      <circle cx="230" cy="28" r="6" fill="#D9F24F"/>
+
+      <!-- Primary Feature Banner inside Mobile UI -->
+      <g transform="translate(10, 56)">
+        <rect width="232" height="124" rx="12" fill="#24211D" stroke="#3D3730" stroke-width="1"/>
+        <text x="14" y="24" fill="#E8A87C" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">ACTIVE MORNING DRIVE</text>
+        <text x="14" y="46" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Gandhipuram Kitchen</text>
+        <text x="14" y="62" fill="#A8A59E" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Goal: 250 Breakfast Meals</text>
+
+        <!-- Progress inside Phone -->
+        <rect x="14" y="74" width="204" height="6" rx="3" fill="#36322C"/>
+        <rect x="14" y="74" width="168" height="6" rx="3" fill="url(#warm-accent)"/>
+        
+        <text x="14" y="98" fill="#E8A87C" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">204 / 250 Meals</text>
+        <text x="218" y="98" text-anchor="end" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="10">81% Met</text>
+
+        <rect x="14" y="106" width="204" height="1" fill="#36322C"/>
+      </g>
+
+      <!-- Quick Action Cards inside Phone -->
+      <g transform="translate(10, 194)">
+        <text x="4" y="12" fill="#8E8C85" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Quick Sponsor Tiers</text>
+        
+        <!-- Button 1 -->
+        <rect x="0" y="22" width="70" height="42" rx="8" fill="#0F3FE8"/>
+        <text x="35" y="42" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">1 Meal</text>
+        <text x="35" y="55" text-anchor="middle" fill="#A4B8FF" font-family="'JetBrains Mono', monospace" font-size="9">₹25</text>
+
+        <!-- Button 2 -->
+        <rect x="81" y="22" width="70" height="42" rx="8" fill="#24211D" stroke="#3D3730" stroke-width="1"/>
+        <text x="116" y="42" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">4 Meals</text>
+        <text x="116" y="55" text-anchor="middle" fill="#A8A59E" font-family="'JetBrains Mono', monospace" font-size="9">₹100</text>
+
+        <!-- Button 3 -->
+        <rect x="162" y="22" width="70" height="42" rx="8" fill="#24211D" stroke="#3D3730" stroke-width="1"/>
+        <text x="197" y="42" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">10 Meals</text>
+        <text x="197" y="55" text-anchor="middle" fill="#A8A59E" font-family="'JetBrains Mono', monospace" font-size="9">₹250</text>
+      </g>
+
+      <!-- Live Activity Ticker in Mobile Screen -->
+      <g transform="translate(10, 276)">
+        <rect width="232" height="54" rx="8" fill="#1C1B18" stroke="#302E29" stroke-width="1"/>
+        <circle cx="22" cy="27" r="10" fill="#152B17"/>
+        <text x="22" y="31" text-anchor="middle" fill="#10B981" font-size="10">✓</text>
+        <text x="40" y="22" fill="#E8E6DF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Kavitha S. sponsored 4 meals</text>
+        <text x="40" y="38" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="9">3 MINUTES AGO · VERIFIED</text>
+      </g>
+
+      <!-- App Bottom Nav Bar -->
+      <g transform="translate(10, 342)">
+        <rect width="232" height="24" rx="6" fill="#141311"/>
+        <circle cx="36" cy="12" r="3" fill="#0F3FE8"/>
+        <circle cx="86" cy="12" r="3" fill="#4E4D48"/>
+        <circle cx="146" cy="12" r="3" fill="#4E4D48"/>
+        <circle cx="196" cy="12" r="3" fill="#4E4D48"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Floating Notification Toast Over Device Frame -->
+  <g transform="translate(520, 330)" filter="url(#phone-shadow)">
+    <rect width="230" height="60" rx="8" fill="#1C1F2B" stroke="#0F3FE8" stroke-width="1.5"/>
+    <circle cx="24" cy="30" r="10" fill="#0F3FE8"/>
+    <text x="24" y="34" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11">♥</text>
+    <text x="44" y="26" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">Meal Delivered!</text>
+    <text x="44" y="42" fill="#99B2FF" font-family="'JetBrains Mono', monospace" font-size="9">Token #IDLY-8802 Claimed</text>
+  </g>
+</svg>

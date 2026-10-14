@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <!-- Background with subtle texture grid -->
+  <rect width="800" height="500" fill="#141413" rx="12"/>
+  <defs>
+    <pattern id="replateo-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#262624" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1.5" fill="#3A3A38"/>
+    </pattern>
+    <linearGradient id="cobalt-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D5BFF"/>
+      <stop offset="100%" stop-color="#0F3FE8"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#222220"/>
+      <stop offset="100%" stop-color="#1A1A18"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#replateo-grid)"/>
+
+  <!-- Radial accent glow -->
+  <circle cx="520" cy="240" r="260" fill="#0F3FE8" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="200" cy="380" r="180" fill="#D9F24F" opacity="0.06" filter="blur(50px)"/>
+
+  <!-- Top Metadata Bar -->
+  <g transform="translate(40, 36)">
+    <rect x="0" y="0" width="160" height="26" rx="4" fill="#242422" stroke="#363632" stroke-width="1"/>
+    <circle cx="14" cy="13" r="4" fill="#D9F24F"/>
+    <text x="26" y="17" fill="#E8E6DF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" letter-spacing="1">SURPLUS DISPATCH</text>
+    <text x="720" y="18" text-anchor="end" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="11">SYS: ECO-RELAY // V1.0</text>
+  </g>
+
+  <!-- Network Connection Vectors -->
+  <g stroke="#0F3FE8" stroke-width="2" stroke-dasharray="6 6" opacity="0.75">
+    <path d="M 220 220 L 380 180"/>
+    <path d="M 380 180 L 560 250"/>
+    <path d="M 380 180 L 390 340"/>
+    <path d="M 560 250 L 680 320"/>
+  </g>
+
+  <!-- Animated-like Solid Connectors with glow -->
+  <path d="M 220 220 Q 300 150 380 180" stroke="#4871FF" stroke-width="2" fill="none"/>
+  <path d="M 380 180 Q 480 160 560 250" stroke="#4871FF" stroke-width="2" fill="none"/>
+
+  <!-- Central Hub Node (Main Card) -->
+  <g transform="translate(300, 120)" filter="url(#soft-shadow)">
+    <rect width="200" height="130" rx="8" fill="url(#card-grad)" stroke="#383834" stroke-width="1.5"/>
+    <rect x="14" y="14" width="34" height="34" rx="6" fill="#0F3FE8"/>
+    <!-- Food Box Icon in Hub -->
+    <path d="M 23 28 L 31 23 L 39 28 L 31 33 Z" stroke="#FFFFFF" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+    <path d="M 23 28 L 23 35 L 31 40 L 31 33" stroke="#FFFFFF" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+    <path d="M 39 28 L 39 35 L 31 40" stroke="#FFFFFF" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+    
+    <text x="58" y="27" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Hub: Coimbatore-01</text>
+    <text x="58" y="42" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="10">COORDINATION NODE</text>
+    
+    <line x1="14" y1="58" x2="186" y2="58" stroke="#2E2E2A" stroke-width="1"/>
+    
+    <text x="14" y="78" fill="#8E8C85" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Surplus Allocation</text>
+    <text x="186" y="78" text-anchor="end" fill="#D9F24F" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">92% MATCHED</text>
+    
+    <!-- Progress bar -->
+    <rect x="14" y="90" width="172" height="6" rx="3" fill="#2A2A28"/>
+    <rect x="14" y="90" width="158" height="6" rx="3" fill="url(#cobalt-glow)"/>
+
+    <text x="14" y="114" fill="#A8A69E" font-family="'JetBrains Mono', monospace" font-size="10">Capacity: 480 Meals / Day</text>
+  </g>
+
+  <!-- Left Node: Food Donor Node -->
+  <g transform="translate(110, 180)" filter="url(#soft-shadow)">
+    <rect width="170" height="96" rx="8" fill="url(#card-grad)" stroke="#383834" stroke-width="1.2"/>
+    <circle cx="28" cy="28" r="12" fill="#1C2E15"/>
+    <circle cx="28" cy="28" r="5" fill="#D9F24F"/>
+    <text x="48" y="26" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Event Hall Donor</text>
+    <text x="48" y="38" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="9">FOOD SOURCE • READY</text>
+    <line x1="14" y1="50" x2="156" y2="50" stroke="#2E2E2A" stroke-width="1"/>
+    <text x="14" y="68" fill="#C5C3BB" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Batch #408: Meals Pack</text>
+    <text x="14" y="84" fill="#0F3FE8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">QTY: 140 UNITS</text>
+  </g>
+
+  <!-- Right Node: NGO Shelter Node -->
+  <g transform="translate(520, 210)" filter="url(#soft-shadow)">
+    <rect width="180" height="96" rx="8" fill="url(#card-grad)" stroke="#383834" stroke-width="1.2"/>
+    <rect x="16" y="18" width="22" height="22" rx="4" fill="#241B08"/>
+    <circle cx="27" cy="29" r="5" fill="#FBBF24"/>
+    <text x="46" y="27" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Hope Care Shelter</text>
+    <text x="46" y="39" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="9">NGO RECIPIENT</text>
+    <line x1="16" y1="52" x2="164" y2="52" stroke="#2E2E2A" stroke-width="1"/>
+    <text x="16" y="70" fill="#C5C3BB" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">ETA: 22 Mins • In Transit</text>
+    <text x="16" y="84" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">ROUTE VERIFIED ✓</text>
+  </g>
+
+  <!-- Bottom Node: Volunteer Dispatch -->
+  <g transform="translate(300, 310)" filter="url(#soft-shadow)">
+    <rect width="180" height="80" rx="8" fill="url(#card-grad)" stroke="#383834" stroke-width="1.2"/>
+    <circle cx="28" cy="26" r="10" fill="#0F3FE8" opacity="0.3"/>
+    <circle cx="28" cy="26" r="4" fill="#4871FF"/>
+    <text x="46" y="25" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Volunteer Fleet</text>
+    <text x="46" y="37" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="9">DISPATCH TEAM #04</text>
+    <line x1="14" y1="46" x2="166" y2="46" stroke="#2E2E2A" stroke-width="1"/>
+    <text x="14" y="65" fill="#A8A69E" font-family="'JetBrains Mono', monospace" font-size="10">Active Couriers: 8 Online</text>
+  </g>
+
+  <!-- Bottom Status Pill -->
+  <g transform="translate(40, 440)">
+    <rect x="0" y="0" width="720" height="32" rx="6" fill="#1A1A18" stroke="#2C2C28" stroke-width="1"/>
+    <text x="20" y="20" fill="#8E8C85" font-family="'JetBrains Mono', monospace" font-size="11">STACK: REACT · TAILWIND CSS · REST CONTRACTS</text>
+    <text x="700" y="20" text-anchor="end" fill="#D9F24F" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">CONCEPT &amp; FRONTEND ASSIST</text>
+  </g>
+</svg>
